@@ -29,7 +29,13 @@
         <section class="main">
             <h1 class="main__header">Patagonia</h1>
             <p class="main__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
-            <img src="images/Image.svg" class="main__image" alt="horses on a field">
+            <div class="main__image"> 
+                <picture>
+                    <source media="(max-width: 320px") srcset="./images/image3.svg">
+                    <source media="(max-width: 768px") srcset="./images/image2.svg">
+                    <img src="images/Image.svg" alt="horses on a field">
+                </picture>
+            </div>
         </section>
     </main>
     

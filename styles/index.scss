@@ -3,13 +3,18 @@
 @import 'header'; 
 
 .main {
+    max-width: 864px;
+    width: 100%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap; 
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+    
 
     &__header {
-        margin-top: 80px; 
+        margin-top: 30px; 
         font-family: "poppins", serif;
         font-weight: 500px; 
         font-size: 90px; 
@@ -19,17 +24,65 @@
     }
 
     &__text {
+        max-width: 573.5px;
+        width: 100%; 
         font-family: "source sans 3", serif;
         font-style: normal; 
         font-size: 22px;
         line-height: 33px;
+        text-align: center;
         margin-bottom: 47px; 
+        flex-wrap: wrap; 
     }
 
     &__image {
+        display: flex;
+        justify-content: center;
         max-width: 864px;
         width: 100%;
         min-height: 328px;
         height: 100%;
     }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .main {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    .main__header {
+        font-size: 72px; 
+        font-style: normal;
+        line-height: 82.8px;
+        letter-spacing: -1.6px;
+    }
+    .main__info {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }  
+
+}
+
+/* Mobile */ 
+@media screen and (max-width: 320px) {
+    .main {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    .main__header {
+        font-size: 36px;
+        line-height: 39.6px;
+        letter-spacing: -0.8px;
+
+    }
+
+    .main__text {
+        font-size: 12px; 
+        line-height: 18px; 
+        margin-left: 20px;
+        margin-right: 20px; 
+    }  
 }
