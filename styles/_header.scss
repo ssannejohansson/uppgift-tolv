@@ -1,0 +1,40 @@
+@use 'fonts'; 
+
+* {
+    color: fonts.$main-txt-color;
+}
+
+.header {
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+
+
+    &__logo {
+        font-family: "aldrich", serif;
+        font-style: normal; 
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        color: fonts.$main-txt-color;
+    }
+
+    &__links {
+        display: flex;
+        font-family: "source sans 3", serif;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+        &__links li, &__links li a {
+            margin-left: 28px;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        &__links li:hover, &__links li a:hover {
+            color: #DBE4FF;
+        }
+}
+
