@@ -41,6 +41,22 @@
         }
 }
 
+.toggle {
+    position: absolute; 
+    max-width: 320px;
+    width: 100%; 
+    height: 24px;    
+    display: none;
+    justify-content: flex-end;
+}
+
+.fa-ellipsis {
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    padding-right: 20px; 
+}
+
 /* Tablet */
 @media screen and (max-width: 768px) {
     .header__logo {
@@ -59,5 +75,16 @@
 
 /* Mobile */
 @media screen and (max-width: 320px) {
-    
+    .header {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    .toggle {
+        display: flex; 
+    }
+
+    .header__links {
+        display: none; 
+    }
 }
