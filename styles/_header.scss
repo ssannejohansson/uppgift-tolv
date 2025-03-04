@@ -8,7 +8,7 @@
     margin: auto; 
     margin-top: 62px;
     max-width: 864px;
-    width: 100;
+    width: 100%;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -37,13 +37,13 @@
         }
 
         &__links li:hover, &__links li a:hover {
-            color: #DBE4FF;
+            color: #86563e;
         }
 }
 
 .toggle {
     position: absolute; 
-    max-width: 320px;
+    max-width: 256px;
     width: 100%; 
     height: 24px;    
     display: none;
@@ -57,8 +57,17 @@
     padding-right: 20px; 
 }
 
+.fa-ellipsis:hover {
+    color: #86563e;
+}
+
 /* Tablet */
 @media screen and (max-width: 768px) {
+    .header {
+        max-width: 617px; 
+        width: 100%;
+    } 
+    
     .header__logo {
         font-family: "baloo 2", serif; 
         font-weight: 800;
@@ -66,18 +75,13 @@
         line-height: 36px; 
         letter-spacing: -0.24px;
     }
-
-    .header {
-        margin-left: 20px;
-        margin-right: 20px; 
-    }
 }
 
 /* Mobile */
 @media screen and (max-width: 320px) {
     .header {
-        margin-left: 20px;
-        margin-right: 20px; 
+        max-width: 256px; 
+        width: 100%;
     }
 
     .toggle {
@@ -85,6 +89,6 @@
     }
 
     .header__links {
-        display: none; 
+    display: none; 
     }
 }
