@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @use 'fonts';
 
 @import 'header'; 
@@ -6,11 +13,21 @@
     max-width: 864px;
     width: 100%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 
     &__header {
         margin-top: 30px; 
@@ -31,12 +48,17 @@
         line-height: 33px;
         text-align: center;
         margin-bottom: 47px; 
-        flex-wrap: wrap; 
+        -ms-flex-wrap: wrap; 
+            flex-wrap: wrap; 
     }
 
     &__image {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         max-width: 864px;
         width: 100%;
         min-height: 328px;
